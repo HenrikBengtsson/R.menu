@@ -2,6 +2,11 @@
 Package: R.menu
 ===============
 
+Version: 0.3.1 [2014-06-16]
+o Fixed minor R CMD check warning on DESCRIPTION.
+o Updated package dependencies.
+
+
 Version: 0.3.0 [2012-10-24]
 o User queries are now done via standard error.
 o Now package only imports other package, not depends on them.
