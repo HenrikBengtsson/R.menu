@@ -2,7 +2,7 @@ selectOrder <- function(choices, title="Select order", header="%s (0 to keep res
   res <- c();
   while (length(choices) > 1) {
     if (length(res) > 0) {
-      msg <- paste(seq(along=res), ": ", res, sep="");
+      msg <- paste(seq_along(res), ": ", res, sep="");
       msg <- paste(msg, collapse=", ");
       msg <- paste("Currently selected items: ", msg, "\n");
       msg <- paste(msg, sprintf(header, title), "\n", sep="");

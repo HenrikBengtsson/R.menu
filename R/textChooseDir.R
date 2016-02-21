@@ -79,7 +79,7 @@ textChooseDir <- function(path=".", pattern="[^~]$", ..., history=TRUE, verbose=
 
       # Append slash to directories
       options <- paste(options, "/", sep="");
-      names(options) <- seq(along=options);
+      names(options) <- seq_along(options);
     } else {
       options <- NULL;
     }
@@ -101,7 +101,7 @@ textChooseDir <- function(path=".", pattern="[^~]$", ..., history=TRUE, verbose=
       break;
     } else if (choice == "<back>") {
       path <- pathHistory[length(pathHistory)-1];
-      pathHistory <- pathHistory[seq(length=length(pathHistory)-2)];
+      pathHistory <- pathHistory[seq_len(length(pathHistory)-2)];
     } else {
       path <- paths[ans];
     }

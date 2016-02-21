@@ -26,14 +26,14 @@ selectMenu <- function(choices, selected=NULL, title="Select/unselect items", op
   repeat{
     currChoices <- paste(c("[ ]", "[x]")[as.integer(selected)+1], choices, sep=" ");
     names(currChoices) <- names(choices);
-    optionIdxs <- nbrOfChoices + seq(along=options);
+    optionIdxs <- nbrOfChoices + seq_along(options);
     ans <- textMenu(choices=c(currChoices, options), title=title, ...);
     if (ans > nbrOfChoices) {
       opt <- options[ans-nbrOfChoices];
       if (opt == "Select all") {
-        selected[seq(along=currChoices)] <- TRUE;
+        selected[seq_along(currChoices)] <- TRUE;
       } else if (opt == "Unselect all") {
-        selected[seq(along=currChoices)] <- FALSE;
+        selected[seq_along(currChoices)] <- FALSE;
       } else if (opt == "Toggle all") {
         selected <- !selected;
       } else if (opt == "Done") {
