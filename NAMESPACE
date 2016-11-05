@@ -23,7 +23,7 @@ importFrom("R.utils", "isDirectory")
 importFrom("R.utils", "isFile")
 importFrom("R.utils", "popState")
 importFrom("R.utils", "pushState")
-
+importFrom("utils", "str")
 
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 # EXPORTS
