@@ -15,7 +15,7 @@
 
 
  \description{
-   A text based menu system
+   A simple text based menu system for R.
 
    This package should be considered to be in an alpha or beta phase.
    You should expect the API to be changing over time.
