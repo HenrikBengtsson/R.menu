@@ -2,6 +2,11 @@
 Package: R.menu
 ===============
 
+Version: 0.3.2 [2016-11-05]
+o ROBUSTNESS: Importing utils functions too.
+o ROBUSTNESS: seq_along() and seq_len() everywhere.
+
+
 Version: 0.3.1 [2014-06-16]
 o Fixed minor R CMD check warning on DESCRIPTION.
 o Updated package dependencies.

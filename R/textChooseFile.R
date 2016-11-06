@@ -96,7 +96,7 @@ textChooseFile <- function(path=".", pattern="[^~]$", ..., history=TRUE, verbose
       options <- options2;
       rm(o);
 
-      names(options) <- seq(along=options);
+      names(options) <- seq_along(options);
 
       if (length(pathHistory) > 1)
         options <- c(options, "-"="<back>");
@@ -108,7 +108,7 @@ textChooseFile <- function(path=".", pattern="[^~]$", ..., history=TRUE, verbose
         break;
       } else if (options[ans] == "<back>") {
         path <- pathHistory[length(pathHistory)-1];
-        pathHistory <- pathHistory[seq(length=length(pathHistory)-2)];
+        pathHistory <- pathHistory[seq_len(length(pathHistory)-2)];
       } else {
         path <- paths[ans];
       }
